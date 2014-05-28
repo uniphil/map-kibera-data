@@ -5,7 +5,7 @@ var map = L.map('map', {
   zoomControl: false,
   attributionControl: false
 });
-L.tileLayer('http://{s}.tiles.mapbox.com/v3/pschleihauf.ic00e0o5/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('http://{s}.tiles.mapbox.com/v3/pschleihauf.ibp74ddd/{z}/{x}/{y}.png').addTo(map);
 
 
 var schools = [];
