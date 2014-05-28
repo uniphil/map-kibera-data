@@ -6,18 +6,46 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
     <style>
       body {
-        background: #333;
+        font-size: 12px;
+        font-family: sans-serif;
         color: #ccc;
+        background: #222;
       }
       #map {
-        height: 512px;
+        height: 480px;
         background: #000;
+      }
+      #controls {
+        max-height: 320px;
+        overflow: auto;
+      }
+      .circle {
+        display: inline-block;
+        margin: 0 0.667em;
+        opacity: 0.667;
+      }
+      .circle:before {
+        content: "●";
+      }
+      a {
+        color: #cc6;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
 
     <div id="map">
+    </div>
+    <div id="legend">
+      <span id="legend-key"></span>
+      <span id="legend-values"></span>
+    </div>
+    <div id="controls">
+      <a href="#" id="show-sources">show sources</a><br/>
     </div>
 
     <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
